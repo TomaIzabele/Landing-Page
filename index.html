@@ -9,20 +9,42 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="logo">trvrat</div>
+      <div class="logo">trvvrat</div>
+
+      <div class="date-location">
+        <span id="time">06:04:02</span>
+        <span id="location">London</span>
+      </div>
+
       <nav class="nav">
         <a href="#">Home</a>
         <a href="#">Service</a>
-        <a href="#">About</a>
-        <a href="#">Product</a>
       </nav>
+
       <div class="language-switcher">
         <button>EN</button>
         <button>IN</button>
       </div>
-    </header>
 
-    <!-- Hero Section -->
+      <a href="#">Saved</a>
+      <a href="#">Cart</a>
+    </header>
+    <script>
+      function updateTime() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, "0");
+        const minutes = String(now.getMinutes()).padStart(2, "0");
+        const seconds = String(now.getSeconds()).padStart(2, "0");
+        document.getElementById(
+          "time"
+        ).textContent = `${hours}:${minutes}:${seconds}`;
+      }
+
+      setInterval(updateTime, 1000); // Update every second
+      updateTime(); // Also update immediately
+    </script>
+
+    <!-- Hero -->
     <section class="hero">
       <img
         src="hero-family-kayaking.png"
@@ -35,7 +57,7 @@
       </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Features -->
     <section class="features">
       <h2>Every journey is unique</h2>
       <div class="feature-cards">
@@ -69,7 +91,7 @@
       </div>
     </section>
 
-    <!-- Clients Section -->
+    <!-- Clients -->
     <section class="clients">
       <h2>Clients about our work</h2>
       <div class="client-review">
@@ -91,7 +113,7 @@
       </div>
     </section>
 
-    <!-- Team Profile -->
+    <!-- Team -->
     <section class="team-profile">
       <img
         src="profile-joseph-stalin.jpeg"
@@ -100,7 +122,7 @@
       <p>Joseph Stalin - Creative Director</p>
     </section>
 
-    <!-- Detail Section -->
+    <!-- Detail -->
     <section class="details">
       <h2>We take care of all the details</h2>
       <img
