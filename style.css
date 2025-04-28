@@ -1,0 +1,209 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+}
+
+.nav a {
+  margin: 0 15px;
+}
+
+.language-switcher button {
+  margin-left: 10px;
+  background: none;
+  border: 1px solid #111;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: white;
+  text-align: left;
+}
+
+.learn-more {
+  margin-top: 20px;
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Features Section */
+.features {
+  padding: 40px 20px;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.feature-cards .card,
+.feature-cards .profile {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Circle Photo */
+.circle-photo {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.circle-photo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Adventure Thumbnails */
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.thumb {
+  margin: 10px;
+}
+
+.thumb img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Clients Section */
+.clients {
+  padding: 40px 20px;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.client-review {
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.client-review img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Team Profile */
+.team-profile {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.team-profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Detail Section */
+.details {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.detail-image {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  background: #f3f3f3;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.footer-decor {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer .newsletter {
+  margin-top: 10px;
+}
+
+.footer .newsletter input {
+  padding: 8px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer .newsletter button {
+  padding: 8px 12px;
+  background: white;
+  color: #f1e9e9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
